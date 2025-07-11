@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kishlay Choudhary | AI Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+      color: #f5f5f5;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 0;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: #00ffe1;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 20px;
+      transition: 0.3s;
+      font-family: 'Orbitron', sans-serif;
+    }
+    nav a:hover {
+      color: white;
+      text-shadow: 0 0 5px #00ffe1;
+    }
+    header {
+      padding-top: 100px;
+      text-align: center;
+      background: linear-gradient(to right, #0f2027, #203a43);
+      padding-bottom: 50px;
+    }
+    header h1 {
+      font-size: 3em;
+      color: #00ffe1;
+      font-family: 'Orbitron', sans-serif;
+    }
+    header h2 {
+      font-size: 1.5em;
+      margin-top: 10px;
+      color: #77e5ff;
+    }
+    .button-row {
+      margin-top: 20px;
+    }
+    .button-row a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border: 2px solid #00ffe1;
+      color: #00ffe1;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.4s;
+      font-weight: bold;
+    }
+    .button-row a:hover {
+      background-color: #00ffe1;
+      color: #000;
+    }
+    section {
+      padding: 60px 10%;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #00ffe1;
+    }
+    .project-card {
+      background-color: #1a2b3c;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #00ffe1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+.skills {
+            background-color: #1b2f43;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.415);
+            transition: transform 0.3s;
+            display: flex; /* Added for three-column layout */
+            flex-wrap: wrap; /* Allow wrapping for responsiveness */
+            justify-content: space-between; /* Space columns evenly */
+        }
+        .skills:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 25px rgba(2, 179, 179, 0.819);
+        }
+        .skills-column {
+            flex: 1; /* Each column takes equal space */
+            min-width: 200px; /* Minimum width for each column */
+            margin: 10px; /* Space between columns */
+            list-style: none; /* Remove default bullets */
+            padding: 0;
+            color: #fff; /* White text for readability on dark background */
+        }
+        .skills-column li {
+            margin-bottom: 8px; /* Space between items */
+            font-size: 16px; /* Adjust as needed */
+        }
+        .skills a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #00ffe1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
+  <h1>Kishlay Choudhary</h1>
+  <h2>AI/ML Engineer • Python Full Stack • Prompt Engineer</h2>
+  <div class="button-row">
+    <a href="https://drive.google.com/file/d/1h7_44RtjfGwwoIq19dBWGrOOUvMbar4i/view?usp=sharing" download>📄 Resume</a>
+    <a href="https://github.com/thecoderji" target="_blank">💻 GitHub</a>
+    <a href="https://www.linkedin.com/in/kishlaychoudhary/" target="_blank">🔗 LinkedIn</a>
+    <a href="https://leetcode.com/u/thecoderji/" target="_blank">⚡ LeetCode</a>
+  </div>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <h3>FunnX.AI</h3>
+    <p>Multi-model AI research platform with Firebase login, chat history, and light/dark toggle. Built using Flask + Streamlit + Python APIs.</p>
+    <a href="https://github.com/thecoderji/FunnX.Ai" target="_blank">🔗 View Project</a>
+  </div>
+  <div class="project-card">
+    <h3>Personal Wealth Manager</h3>
+    <p>CSV-based offline finance tracker with expense, savings, and portfolio insights in a clean UI. Built in Streamlit & Pandas.</p>
+    <a href="https://github.com/thecoderji/personal_wealth_manager" target="_blank">🔗 View Project</a>
+  </div>
+  <div class="project-card">
+    <h3>Movie Recommendation System</h3>
+    <p>Recommender system using content filtering, cosine similarity & Scikit-learn. Includes visualizations and suggestions.</p>
+    <a href="https://github.com/thecoderji/Movie-Recommendation-System" target="_blank">🔗 View Project</a>
+  </div>
+    <div class="project-card">
+    <h3>Weather Web App</h3>
+    <p>Web application to display weather information using external APIs. Built with HTML, CSS and JavaScript.</p>
+    <a href="https://github.com/thecoderji/Weather-Web" target="_blank">🔗 View Project</a>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <ul class="skills-column">
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Matplotlib</li>
+            <li>Scikit-learn</li>
+            <li>Seaborn</li>
+            <li>Flask</li>
+            <li>React</li>
+    </ul>
+    <ul class="skills-column">
+            <li>Streamlit</li>
+            <li>Java</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Machine Learning</li>
+            <li>Generative AI</li>
+            <li>Prompt Engineering</li>
+            <li>AI Research</li>
+    </ul>
+    <ul class="skills-column">
+            <li>LLMs (ChatGPT, Gemini, Grok, Mistral)</li>
+            <li>Deep Learning</li> <!-- Replaced AI Agents -->
+            <li>OOP</li>
+            <li>DSA (Intermediate)</li>
+            <li>System Design</li>
+            <li>Software Development</li>
+            <li>DBMS</li>
+            <li>Git</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>📧 kishlaychoudhary1233@gmail.com</p>
+  <p>📞 +91-9990687453</p>
+</section>
+
+<footer>
+  &copy; 2025 Kishlay Choudhary | Crafted with 💙 HTML, CSS, JS
+</footer>
+
+</body>
+</html>
